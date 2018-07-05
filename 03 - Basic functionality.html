@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery AJAX</title>
+	</head>
+	<body>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$.ajax({
+				url: 'file.txt',
+				success: function(data) {
+					console.log(data);
+				},
+				error: function() {
+					console.log('Something went wrong.');
+				}
+			});
+		</script>
+	</body>
+</html>
